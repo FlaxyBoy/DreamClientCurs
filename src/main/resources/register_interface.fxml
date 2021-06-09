@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.dream.chat.window.controllers.RegisterController">
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="loginField" layoutX="102.0" layoutY="165.0" promptText="User name" style="-fx-background-color: transparent; -fx-border-color: #ad18a9; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button layoutX="36.0" layoutY="360.0" mnemonicParsing="false" onAction="#onAction" prefHeight="54.0" prefWidth="130.0" style="-fx-background-color: #ad18a9;" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="185.0" layoutY="360.0" mnemonicParsing="false" onAction="#onActionRegister" prefHeight="54.0" prefWidth="130.0" style="-fx-background-color: #ad18a9;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="74.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="74.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@password_icon.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ad18a9" layoutX="71.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="passwordField" layoutX="102.0" layoutY="207.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #ad18a9; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="confirmPasswordField" layoutX="102.0" layoutY="246.0" promptText="Confirm password" style="-fx-background-color: transparent; -fx-border-color: #ad18a9; -fx-border-width: 0px 0px 2px 0px;" />
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #eb34e5;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="101.0" layoutX="120.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="76.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DreamChat">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
